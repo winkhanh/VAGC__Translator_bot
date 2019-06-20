@@ -1,0 +1,13 @@
+.chat-box-component{
+    height: 90vh;
+    overflow: auto;
+}
+
+.me{
+    text-align: right;
+    background: lightblue;
+}
+.bot{
+    text-align: left;
+    background: lightcoral;
+}
