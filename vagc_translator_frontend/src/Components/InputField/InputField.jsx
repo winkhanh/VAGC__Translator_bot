@@ -11,6 +11,7 @@ const InputField = (props) =>{
         <div className="input-filed-component">
             <input id='input-box' type='text' onChange={onChangleHandle} value={message}></input>
             <button onClick={()=>{
+                if (props.ifLoading===true) return;
                 props.onClickHandle(message);
                 const inputBox=document.getElementById('input-box');
                 console.log(inputBox.value)
