@@ -23,7 +23,7 @@ const ChatBox = (props) =>
 {
     return(
         <div id='chat-box' className={'chat-box-component'}>
-            {(props.messages.length===0)?NothingToDisplay:DisplayMessages(props.messages)}
+            {(props.messages.length===0)?NothingToDisplay():DisplayMessages(props.messages)}
         </div>
     );
 }
